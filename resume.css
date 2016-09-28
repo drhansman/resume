@@ -10,7 +10,7 @@ body
 
 a:link
   {
-    color: #f2f2f2;
+    color: #ebb000;
     text-decoration: none;
   }
 
@@ -23,13 +23,14 @@ a:hover
 a:visited
   {
     color: #ebb000;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
 ul li
   {
     list-style-type: none;
   }
+
 /***** Specific content for resume styles. *****/
 
 .header
@@ -85,10 +86,22 @@ ul li
     display: block;
   }
 
+  .subdetail
+    {
+      padding: 10px;
+      margin: 10px;
+      min-height: 10px;
+      font-size: 1em;
+      font-weight: 400;
+      font-style: italic;
+      display: block;
+    }
+
 .wrapper
   {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
 .job
@@ -103,7 +116,25 @@ ul li
     display: block;
   }
 
-/***** This section discusses the font and text styles for various components. *****/
+.job:hover
+  {
+    background-color: #370080;
+  }
+
+.detail
+  {
+    font-size: 0.8em;
+    display: none;
+  }
+
+.footer
+  {
+    background-color: #cccccc;
+    padding: 10px;
+    color: #000066;
+    display: block;
+    min-height: 20px;
+  }
 
 .name
   {
@@ -156,8 +187,8 @@ ul li
     text-align: center;
   }
 
-.detail
+.attrib
   {
     font-size: 0.8em;
-    display: none;
+    text-align:center;
   }
