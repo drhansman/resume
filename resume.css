@@ -6,12 +6,6 @@ body
     padding: 10px;
     color: #000066;
     font-family: "Raleway", sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 97%;
-    flex-basis: auto;
-    align-items: center;
-    justify-content: center;
   }
 
 a:link
@@ -53,7 +47,7 @@ ul li
     color: #000066;
     padding: 10px;
     margin: 10px;
-    display: inline-flex;
+    display: grid;
     height: 100%;
   }
 
@@ -63,7 +57,7 @@ ul li
     color: #f2f2f2;
     padding: 10px;
     margin: 10px;
-    display: inline-flex;
+    display: grid;
     height: 100%;
   }
 
@@ -97,9 +91,9 @@ ul li
     color: #f2f2f2;
     padding: 10px;
     margin: 10px;
-    height: 100%;
-    display: inline-flex;
+    display: block;
   }
+
 /***** This section discusses the font and text styles for various components. *****/
 
 .name
@@ -112,6 +106,21 @@ ul li
 .tagline
   {
     font-size: 1.2em;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+  }
+
+.ethos
+  {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+.cite
+  {
+    font-size: 1em;
     font-weight: 400;
     font-style: italic;
     text-align: center;
