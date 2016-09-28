@@ -1,0 +1,145 @@
+/***** General layout components (body, links, etc.) *****/
+
+body
+  {
+    background-color: #f2f2f2;
+    padding: 10px;
+    color: #000066;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 97%;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+a:link
+  {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+
+a:hover
+  {
+    color: #ebb000;
+    text-decoration: underline;
+  }
+
+a:visited
+  {
+    color: #ebb000;
+    text-decoration: underline;
+  }
+
+ul li
+  {
+    list-style-type: none;
+  }
+/***** Specific content for resume styles. *****/
+
+.header
+  {
+    background-color: #f2f2f2;
+    padding: 10px;
+    color: #000066;
+    display: block;
+    min-height: 100px;
+  }
+
+.contact
+  {
+    background-color: #cccccc;
+    color: #000066;
+    padding: 10px;
+    margin: 10px;
+    display: inline-flex;
+    height: 100%;
+  }
+
+.social
+  {
+    background-color: #000066;
+    color: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    display: inline-flex;
+    height: 100%;
+  }
+
+.sectionbreak
+  {
+    background-color: #fefefe;
+    padding: 10px;
+    color: #000066;
+    margin: 10px;
+    min-width: 300px;
+    min-height: 30px;
+    display: block;
+  }
+
+.subsection
+  {
+    padding: 10px;
+    margin: 10px;
+    min-height: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-top: 3px;
+    border-top-style: solid;
+    border-top-color: #ebb000;
+    display: block;
+  }
+
+.job
+  {
+    background-color: #000066;
+    color: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    display: inline-flex;
+  }
+/***** This section discusses the font and text styles for various components. *****/
+
+.name
+  {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+.tagline
+  {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+  }
+
+.position
+  {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+  }
+
+.when
+  {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+  }
+
+.company
+  {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+.detail
+  {
+    font-size: 0.8em;
+    display: none;
+  }
