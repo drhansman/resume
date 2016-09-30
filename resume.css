@@ -20,6 +20,11 @@ a:hover
     text-decoration: underline;
   }
 
+.name > a:hover
+  {
+    text-decoration: none;
+  }
+
 a:visited
   {
     color: #ebb000;
@@ -31,7 +36,7 @@ ul li
     list-style-type: none;
   }
 
-/***** Specific content for resume styles. *****/
+/***** Top of Site Styles *****/
 
 .header
   {
@@ -61,6 +66,17 @@ ul li
     margin: 10px;
     justify-content: center;
   }
+
+/***** Provides the div wrapper for sections that use flexbox to style content. *****/
+
+.wrapper
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+/***** General site style components. *****/
 
 .sectionbreak
   {
@@ -97,36 +113,6 @@ ul li
       display: block;
     }
 
-.wrapper
-  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-.job
-  {
-    background-color: #000066;
-    color: #f2f2f2;
-    padding: 10px;
-    margin: 10px;
-    min-height: 100px;
-    min-width: 150px;
-    width: 25%;
-    display: block;
-  }
-
-.job:hover
-  {
-    background-color: #370080;
-  }
-
-.detail
-  {
-    font-size: 0.8em;
-    display: none;
-  }
-
 .footer
   {
     background-color: #cccccc;
@@ -135,6 +121,12 @@ ul li
     display: block;
     min-height: 20px;
   }
+
+  .attrib
+    {
+      font-size: 0.8em;
+      text-align:center;
+    }
 
 .name
   {
@@ -166,6 +158,25 @@ ul li
     text-align: center;
   }
 
+/***** Job/Position-Specific Fields *****/
+
+.job
+  {
+    background-color: #000066;
+    color: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    min-height: 100px;
+    min-width: 150px;
+    width: 25%;
+    display: block;
+  }
+
+.job:hover
+  {
+    background-color: #370080;
+  }
+
 .position
   {
     font-size: 1.4em;
@@ -187,8 +198,11 @@ ul li
     text-align: center;
   }
 
-.attrib
+/***** This is the pain style - need to figure out how to get it to only show when requested. *****/
+
+.detail
+
   {
     font-size: 0.8em;
-    text-align:center;
+    display: none;
   }
