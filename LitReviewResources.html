@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Google Analytics script - keep at head -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73934101-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <!-- Adds in jQuery for when I'll need it for show/hide/other stuff. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!--Makes things look pretty, font-wise.-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Material+Icons" rel="stylesheet">
+
+  <!-- Now let's get the basics out of the way. -->
+
+  <meta charset="utf-8">
+  <title>Resources for Northcentral University Literature Review Course</title>
+  <meta name="description" content="Literature Review Resources for NCU Students">
+  <meta name="author" content="Erin M Hansman, PhD">
+
+  <link href="site.css" rel="stylesheet">
+
+</head>
+
+<!-- Time to begin the actual content. -->
+
+<body>
+
+    <div class="header">
+      <h1 class="name"><a href="http://ncu.edu">Northcentral University Literature Review Resources</a></h1>
+      <p class="tagline">Collected by Erin Hansman, PhD.</p>
+    </div>
+
+    <div class="wrapper">
+      
+      <div class="content">
+      <p class="name"><a href="http://turnitin.com">TurnItIn.com</a></p>
+      <a href="#" class="button">Details</a>
+      <p class="togs">(used once in Week 8, 11, or 12 per NCU guidelines)</p>
+      </div>
+
+      <div class="content">
+      <p class="name"><a href="https://owl.english.purdue.edu/">The Purdue OWL</a></p>
+      <a href="#" class="button">Details</a>
+      <p class="togs">Purdue Online Writing Lab (OWL), providing detailed information on citations and references.</p>
+      </div>
+
+    </div>
+
+<!-- MOAR CONTENT HERE -->
+
+  <div class="footer">
+    <p class="attrib">&copy;2012 - 2016 by Erin M Hansman. All rights reserved. Stealing sucks.</p>
+  </div>
+
+  <script type="text/javascript">
+  $('.button').on('click', function() {
+	$parent_box = $(this).closest('.content');
+	$parent_box.siblings().find('.togs').slideUp();
+	$parent_box.find('.togs').slideToggle(1000, 'swing');
+  });
+  </script>
+
+</body>
+</html>

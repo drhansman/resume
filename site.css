@@ -1,0 +1,181 @@
+/***** General layout components (body, links, etc.) *****/
+
+body
+  {
+    background-color: #f2f2f2;
+    padding: 10px;
+    color: #000066;
+    font-family: "Raleway", sans-serif;
+  }
+
+a:link
+  {
+    color: #ebb000;
+    text-decoration: none;
+  }
+
+button
+  {
+    background-color: none;
+    color: #ebb000;
+    text-decoration: none;
+  }
+
+a:hover
+  {
+    color: #ebb000;
+    text-decoration: underline;
+  }
+
+.name > a:hover
+  {
+    text-decoration: none;
+  }
+
+a:visited
+  {
+    color: #ebb000;
+    text-decoration: none;
+  }
+
+ul li
+  {
+    list-style-type: none;
+  }
+
+/***** Top of Site Styles *****/
+
+.header
+  {
+    background-color: #f2f2f2;
+    padding: 10px;
+    color: #000066;
+    display: block;
+    min-height: 100px;
+  }
+
+
+/***** General site style components. *****/
+
+.sectionbreak
+  {
+    background-color: #fefefe;
+    padding: 10px;
+    color: #000066;
+    margin: 10px;
+    min-width: 300px;
+    min-height: 30px;
+    display: block;
+  }
+
+.subsection
+  {
+    padding: 10px;
+    margin: 10px;
+    min-height: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-top: 3px;
+    border-top-style: solid;
+    border-top-color: #ebb000;
+    display: block;
+  }
+
+  .subdetail
+    {
+      padding: 10px;
+      margin: 10px;
+      min-height: 10px;
+      font-size: 1em;
+      font-weight: 400;
+      font-style: italic;
+      display: block;
+    }
+
+.footer
+  {
+    background-color: #cccccc;
+    padding: 10px;
+    color: #000066;
+    display: block;
+    min-height: 20px;
+  }
+
+.name
+  {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+.tagline
+  {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+  }
+
+/***** Provides the div wrapper for sections that use flexbox to style content. *****/
+
+.wrapper
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+/***** Each toggle section needs a corresponding #ID until I can figure this out a bit better. *****/
+
+.deets
+  {
+    text-align: center;
+  }
+
+.togs
+
+  {
+    font-size: 1em;
+    display: none;
+    text-align: center;
+  }
+
+/***** Resource-Specific Fields *****/
+
+.content
+  {
+    background-color: #000066;
+    color: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    min-height: 100px;
+    min-width: 150px;
+    width: 25%;
+    display: block;
+  }
+
+.content:hover
+  {
+    background-color: #370080;
+  }
+
+.title
+  {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+  }
+
+.detail
+  {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+  }
+
+.resource
+  {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+  }
