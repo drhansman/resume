@@ -20,6 +20,11 @@ a:hover
     text-decoration: underline;
   }
 
+.subsection > a:hover
+  {
+    color: #000066;
+    text-decoration: none;
+  }
 .name > a:hover
   {
     text-decoration: none;
@@ -198,11 +203,13 @@ ul li
     text-align: center;
   }
 
-/***** This is the pain style - need to figure out how to get it to only show when requested. *****/
+/***** Toggles between seen and unseen - contains the details about a position. *****/
 
 .detail
 
   {
-    font-size: 0.8em;
+    font-size: 1em;
     display: none;
+    max-height: 200px;
+    overflow: scroll;
   }
