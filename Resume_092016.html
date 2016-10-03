@@ -55,7 +55,7 @@
 
   <h1 class="sectionbreak">My Career (So Far)</h1>
 
-    <a name="deets1"><h2 class="subsection">Going Full Corporate ... Until the Startup Fever Hit (2015 - )</h2></a>
+    <h2 class="subsection"><a name="deets1">Going Full Corporate ... Until the Startup Fever Hit (2015 - )</a></h2>
 
   <div class="wrapper">
     <div class="job">
@@ -80,7 +80,7 @@
     </div>
   </div>
 
-    <a name="deets2"><h2 class="subsection">Corporate / For-Profit ... With a Healthy Dose of Higher Education (2013 - 2015)</h2></a>
+    <h2 class="subsection"><a name="deets2">Corporate / For-Profit ... With a Healthy Dose of Higher Education (2013 - 2015)</a></h2>
 
   <div class="wrapper">
     <div class="job">
@@ -105,7 +105,7 @@
     </div>
   </div>
 
-    <a name="deets3"<h2 class="subsection">Definitely Higher Education / Non-Profit (1999 - 2013)</h2></a>
+    <h2 class="subsection"><a name="deets3">Definitely Higher Education / Non-Profit (1999 - 2013)</a></h2>
 
   <div class="wrapper">
     <div class="job">
@@ -142,7 +142,7 @@
 
   <h1 class="sectionbreak">Freelancing and Teaching</h1>
 
-    <a name="deets4"><h2 class="subsection">In The Classroom (2007 - )</h2></a>
+    <h2 class="subsection"><a name="deets4">In The Classroom (2007 - )</a></h2>
 
   <div class="wrapper">
     <div class="job">
@@ -168,7 +168,7 @@
     </div>
   </div>
 
-    <a name="deets5"><h2 class="subsection">On The Internet (2011 - )</h2></a>
+    <h2 class="subsection"><a name="deets5">On The Internet (2011 - )</a></h2>
 
   <div class="wrapper">
     <div class="job">
@@ -291,9 +291,16 @@
 
   <script type="text/javascript">
   $('.deets').on('click', function() {
+  $parent_box2 = $(this).closest('.wrapper');
+  $parent_box2.siblings().find('.detail').slideUp();
+  });
+  </script>
+
+  <script type="text/javascript">
+  $('.deets').on('click', function() {
   $parent_box = $(this).closest('.job');
   $parent_box.siblings().find('.detail').slideUp();
-  $parent_box.find('.detail').slideToggle(1000, 'swing');
+  $parent_box.find('.detail').slideToggle(0, 'linear');
   });
   </script>
 

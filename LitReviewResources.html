@@ -43,16 +43,16 @@
     </div>
 
     <div class="wrapper">
-      
+
       <div class="content">
       <p class="name"><a href="http://turnitin.com">TurnItIn.com</a></p>
-      <a href="#" class="button">Details</a>
+      <a href="#" class="deets">Details</a>
       <p class="togs">(used once in Week 8, 11, or 12 per NCU guidelines)</p>
       </div>
 
       <div class="content">
       <p class="name"><a href="https://owl.english.purdue.edu/">The Purdue OWL</a></p>
-      <a href="#" class="button">Details</a>
+      <a href="#" class="deets">Details</a>
       <p class="togs">Purdue Online Writing Lab (OWL), providing detailed information on citations and references.</p>
       </div>
 
@@ -65,7 +65,7 @@
   </div>
 
   <script type="text/javascript">
-  $('.button').on('click', function() {
+  $('.deets').on('click', function() {
 	$parent_box = $(this).closest('.content');
 	$parent_box.siblings().find('.togs').slideUp();
 	$parent_box.find('.togs').slideToggle(1000, 'swing');
